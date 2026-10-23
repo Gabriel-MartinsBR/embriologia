@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d35">
+  <meta name="description" content="Estude Embriologia do sistema reprodutor com 100 questões comentadas, sessões de estudo, favoritas e acompanhamento do seu desempenho.">
+  <title>Meu Banco de Questões · Embriologia</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <button class="scrim" id="scrim" aria-label="Fechar menu" hidden></button>
+  <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+    <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">m<span>q</span></span><span>Meu Banco<br><strong>de Questões</strong></span></a>
+    <div class="nav-label">ÁREA DE ESTUDOS</div>
+    <nav id="navigation">
+      <a href="#inicio" data-view="inicio"><span data-icon="home"></span>Início</a>
+      <a href="#questoes" data-view="questoes"><span data-icon="layers"></span>Questões<span class="nav-count" id="nav-total">—</span></a>
+      <a href="#favoritas" data-view="favoritas"><span data-icon="star"></span>Favoritas<span class="nav-count" id="nav-favorites">0</span></a>
+      <a href="#desempenho" data-view="desempenho"><span data-icon="chart"></span>Desempenho</a>
+    </nav>
+    <div class="sidebar-note"><span class="local-dot"></span><strong>Seu ritmo, seu progresso</strong><p>Respostas e favoritas ficam salvas neste navegador.</p></div>
+    <div class="sidebar-bottom">MEDICINA <span>·</span> EMBRIOLOGIA</div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false"><span data-icon="menu"></span></button>
+      <div class="breadcrumb">Meu espaço <span>/</span> <strong id="breadcrumb-current">Início</strong></div>
+      <div class="global-search"><span data-icon="search"></span><label class="sr-only" for="search">Buscar questões por enunciado ou assunto</label><input id="search" type="search" placeholder="Buscar questões ou assuntos…" autocomplete="off"></div>
+      <span class="module-pill">Embriologia</span>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading"><span class="loader"></span><h1>Preparando seu banco de questões</h1><p>Carregando o material de estudo.</p></div></main>
+    <footer class="page-footer">Meu Banco de Questões <span>Progresso local · Aproveitamento pela última resposta de cada questão.</span></footer>
+  </div>
+  <dialog id="solver" aria-labelledby="solver-title"><div id="solver-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
